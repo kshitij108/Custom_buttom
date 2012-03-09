@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19596B2715084D83007C7879 /* 50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = 19596B2615084D82007C7879 /* 50x50.png */; };
+		19596B2A15084E18007C7879 /* 55x55.png in Resources */ = {isa = PBXBuildFile; fileRef = 19596B2915084E18007C7879 /* 55x55.png */; };
 		9803B3E51507377300384AAB /* Mailbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 9803B3E41507377300384AAB /* Mailbox.png */; };
 		9803B3F015073F7700384AAB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9803B3EF15073F7700384AAB /* QuartzCore.framework */; };
 		98B3E68B1506EEC000CB7D9C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B3E68A1506EEC000CB7D9C /* UIKit.framework */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19596B2615084D82007C7879 /* 50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50x50.png; sourceTree = "<group>"; };
+		19596B2915084E18007C7879 /* 55x55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 55x55.png; sourceTree = "<group>"; };
 		9803B3E41507377300384AAB /* Mailbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mailbox.png; sourceTree = "<group>"; };
 		9803B3EF15073F7700384AAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		98B3E6861506EEC000CB7D9C /* Button.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Button.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +59,8 @@
 		98B3E67B1506EEC000CB7D9C = {
 			isa = PBXGroup;
 			children = (
+				19596B2915084E18007C7879 /* 55x55.png */,
+				19596B2615084D82007C7879 /* 50x50.png */,
 				9803B3E41507377300384AAB /* Mailbox.png */,
 				98B3E6901506EEC000CB7D9C /* Button */,
 				98B3E6891506EEC000CB7D9C /* Frameworks */,
@@ -158,6 +164,8 @@
 				98B3E6951506EEC000CB7D9C /* InfoPlist.strings in Resources */,
 				98B3E69E1506EEC000CB7D9C /* MainStoryboard.storyboard in Resources */,
 				9803B3E51507377300384AAB /* Mailbox.png in Resources */,
+				19596B2715084D83007C7879 /* 50x50.png in Resources */,
+				19596B2A15084E18007C7879 /* 55x55.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

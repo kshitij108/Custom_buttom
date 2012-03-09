@@ -22,13 +22,13 @@
 
 - (void)viewDidLoad
 {
-    self.image = [UIImage imageNamed:@"Mailbox.png"];
+    self.image = [UIImage imageNamed:@"55x55.png"];
     self.blueImageLayer = [self returnButtonImageLayer];
     self.redImageLayer = [self returnButtonImageLayer];
     self.blueTitleLayer = [self returnButtonTitleLayer];
     self.redTitleLayer = [self returnButtonTitleLayer];
     self.blueBorder = [UIColor colorWithRed:0 green:0 blue:255 alpha:0.5];
-    self.redBorder = [UIColor colorWithRed:255 green:0 blue:0 alpha:0.5];
+    self.redBorder = [UIColor colorWithRed:0 green:0 blue:255 alpha:0.5];
     [self.button setFrame:CGRectMake(100,100,114,114)];
     self.blueLayer = [self getBlueGradientLayer];
     self.redLayer = [self getRedGradientLayer];
@@ -73,15 +73,16 @@
     CAGradientLayer *shineLayer = [CAGradientLayer layer];
     shineLayer.frame = self.button.layer.bounds;
     shineLayer.colors = [NSArray arrayWithObjects:
-                         (id)[UIColor colorWithRed:255 green:0 blue:0 alpha:0.5].CGColor,
-                         (id)[UIColor colorWithRed:255 green:0 blue:0 alpha:0.4].CGColor,
-                         (id)[UIColor colorWithRed:255 green:0 blue:0 alpha:0.3].CGColor,
-                         (id)[UIColor colorWithRed:255 green:0 blue:0 alpha:0.2].CGColor,
-                         (id)[UIColor colorWithRed:255 green:0 blue:0 alpha:0.1].CGColor,
-                         (id)[UIColor colorWithRed:255 green:0 blue:0 alpha:0.0].CGColor,
+                         (id)[UIColor colorWithRed:0 green:0 blue:255 alpha:1].CGColor,
+                         (id)[UIColor colorWithRed:0 green:0 blue:255 alpha:0.5].CGColor,
+                         (id)[UIColor colorWithRed:0 green:0 blue:255 alpha:0].CGColor,
+                         //(id)[UIColor colorWithRed: green:0 blue:0 alpha:0].CGColor,
+                         //(id)[UIColor colorWithRed:255 green:0 blue:0 alpha:0.1].CGColor,
+                         //(id)[UIColor colorWithRed:255 green:0 blue:0 alpha:0.0].CGColor,
                          nil];
     return shineLayer;
 }
+// layer creating class.
 - (void)setBorderPropertiesOfButton:(UIColor *)color
 {
     CALayer *layer = self.button.layer;
@@ -93,7 +94,7 @@
 - (CALayer *)returnButtonImageLayer
 {
     CALayer *imageLayer = [[CALayer alloc] init];
-    imageLayer.frame = CGRectMake(32,25,48,48);
+    imageLayer.frame = CGRectMake(30,10,55,55);
     imageLayer.affineTransform = CGAffineTransformMake(1.0,0.0,0.0,-1.0,0.0,0.0);
     [imageLayer setBackgroundColor:[[UIColor alloc] initWithPatternImage:self.image].CGColor];
     return imageLayer;
@@ -101,8 +102,8 @@
 - (CATextLayer *)returnButtonTitleLayer
 {
     CATextLayer *titleLayer = [[CATextLayer alloc] init];
-    titleLayer.frame = CGRectMake(30,95,50,15);
-    titleLayer.fontSize = 16;
+    titleLayer.frame = CGRectMake(30,80,60,50);
+    titleLayer.fontSize = 30;
     titleLayer.foregroundColor = [UIColor blackColor].CGColor;
     titleLayer.alignmentMode = kCAAlignmentCenter;
     titleLayer.string = @"Mail";
